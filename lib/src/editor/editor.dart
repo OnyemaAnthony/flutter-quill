@@ -330,7 +330,7 @@ class QuillEditorState extends State<QuillEditor>
       ),
     );
 
-    return selectionEnabled
+    final editor = selectionEnabled
         ? _selectionGestureDetectorBuilder.build(
             behavior: HitTestBehavior.translucent,
             detectWordBoundary: config.detectWordBoundary,
